@@ -171,8 +171,9 @@ function startTimer(time){
         timeCount.textContent = time; //changing the value of timeCount with time value
         time--; //decrement the time value
         if(time < 10){ //If timer is less than 10s timer color becomes red
-            document.getElementByClass("time_left_txt").style.color = "#FF0000";
-            document.getElementByClass("timer_sec").style.color = "#FF0000";
+            
+            document.getElementsByClassName("time_left_txt").style.color = "#FF0000";
+            document.getElementsByClassName("timer_sec").style.color = "#FF0000";
         }
         if(time < 9){ //if timer is less than 9
             let addZero = timeCount.textContent; 
